@@ -4,5 +4,9 @@ oList = this.getView().byId("productsList")
 
 "reucpera el binding con los datos
 	oBinding = oList.getBinding("items");
-  
+"filtrado de datos en leccoin4 semana 2 curso sapui5 de opensap
+
+"ordenado de los datos
+https://sapui5.hana.ondemand.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc
+
   
