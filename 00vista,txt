@@ -1,1 +1,3 @@
 vista
+
+<Button text="Press Me" press=".doSomething"/> --> controller.doSomething()
