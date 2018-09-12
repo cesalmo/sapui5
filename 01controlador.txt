@@ -1,1 +1,8 @@
 
+"recupera un control
+oList = this.getView().byId("productsList")
+
+"reucpera el binding con los datos
+	oBinding = oList.getBinding("items");
+  
+  
