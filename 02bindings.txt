@@ -4,3 +4,21 @@
 "Agregation Binding
 
 "Propierty Binding
+
+
+
+Context Binding (Element Binding)
+
+https://sapui5.hana.ondemand.com/#/topic/91f05e8b6f4d1014b6dd926db0e91070
+
+Let’s take this simple view, containing a single input control:
+<mvc:View
+	controllerName="sap.ui.sample.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Input id="companyInput"
+		 value="{name}"/>	
+</mvc:View>
+In your controller, you can now bind the input control as follows:
+var oInput = this.byId("companyInput");
+oInput.bindElement("/companies/0");
