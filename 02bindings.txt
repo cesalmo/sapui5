@@ -1,2 +1,2 @@
-"Propierty binding:
+"Element binding:
 <Text text="{i18n>productDetailPanelID}: {ProductID}"/>
