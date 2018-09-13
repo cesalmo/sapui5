@@ -1,2 +1,6 @@
 "Element binding:
 <Text text="{i18n>productDetailPanelID}: {ProductID}"/>
+
+"Agregation Binding
+
+"Propierty Binding
