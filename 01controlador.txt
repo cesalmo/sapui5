@@ -9,4 +9,10 @@ oList = this.getView().byId("productsList")
 "ordenado de los datos
 https://sapui5.hana.ondemand.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc
 
+"recupera binding context del elemento seleccionado y rebindea  al panel
+	var oSelectedItem = oEvent.getSource();
+	var oContext = oSelectedItem.getBindingContext();
+	var sPath = oContext.getPath();
+	var oProductDetailPanel = this.byId("productDetailsPanel");
+	oProductDetailPanel.bindElement({ path: sPath });
   
