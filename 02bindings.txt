@@ -1,0 +1,2 @@
+"Propierty binding:
+<Text text="{i18n>productDetailPanelID}: {ProductID}"/>
