@@ -15,4 +15,33 @@ https://sapui5.hana.ondemand.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc
 	var sPath = oContext.getPath();
 	var oProductDetailPanel = this.byId("productDetailsPanel");
 	oProductDetailPanel.bindElement({ path: sPath });
+
+"select count a datos de modelo y los guarda en oViewmodel
+	// Model used to manipulate control states
+	oViewModel = new JSONModel({
+	…
+	tableBusyDelay : 0,
+	cheap: 0,
+	moderate: 0,
+	expensive: 0
+	});
+	this.setModel(oViewModel, "worklistView");
+	
+	//actualizacion de datos en evento on UpdateFinished
+	oModel = this.getModel(),
+	oViewModel = this.getModel("worklistView"),
+	
+	// iterate the filters and request the count from the server
+	jQuery.each(this._mFilters, function (sFilterKey, oFilter) {
+	oModel.read("/ProductSet/$count", {
+	filters: oFilter,
+	success: function (oData) {
+	var sPath = "/" + sFilterKey;
+	oViewModel.setProperty(sPath, oData);
+	}
+	});
+	});
+
+
+
   
