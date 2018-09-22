@@ -1,0 +1,5 @@
+
+data-sap-ui-resourceroots='{ "sap.ui.demo.db": "./" }' --> define namespace
+
+"inicia la vista principal
+new sap.ui.core.mvc.XMLView({ viewName : "sap.ui.demo.db.views.App" }).placeAt("content");
