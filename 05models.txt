@@ -1,0 +1,13 @@
+		
+---- "nuevo modelo JSON  ----
+      var oModel = new sap.ui.model.json.JSONModel(
+          { 
+          firstName : "Harry", 
+          lastName  : "Hawk" ,
+          enabled : true, 
+          panelHeaderText : "Data Binding Basics"
+          }); 
+          
+        "apegalo al core
+        sap.ui.getCore().setModel(oModel);
+			
