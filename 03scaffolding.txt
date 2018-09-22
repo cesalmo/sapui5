@@ -1,0 +1,5 @@
+
+neo-app.json
+  creado desde file -> new -> HTML5 application descriptor
+  recursos para sap cloud platform.  
+  
