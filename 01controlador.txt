@@ -42,6 +42,10 @@ https://sapui5.hana.ondemand.com/#/topic/ec79a5d5918f4f7f9cbc2150e66778cc
 	});
 	});
 
+----core-----
+
+this.getView().byId("yourId") = sap.ui.getCore().byId(this.createId(i));
+
 
 
   
