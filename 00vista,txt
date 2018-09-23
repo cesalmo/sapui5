@@ -8,4 +8,16 @@ Examples for such metadataContexts are:
 {path: 'Customers/Name', model:'json'} a single part with an absolute path to the property Name of the Customers entity set in a named model
 {parts: [{path: 'Customers/Name'},{path: 'editable', model: 'viewModel'}]} a combination of single binding contexts, one context from the default model and one from the viewModel
 
+-----extended expressions--------
+
+number="{ parts: 
+          [{path: 'ExtendedPrice'}, 
+           {path: '/currencyCode'}], 
+type: 'sap.ui.model.type.Currency', 
+formatOptions: { showMeasure: false } }"
+
+numberUnit="{ 
+  path: '/currencyCode', 
+  formatter: '.formatter.getCurrencySymbol' }">
+
 
